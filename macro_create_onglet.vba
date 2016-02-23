@@ -31,7 +31,7 @@ Sub MacroCreateOnglet()
          Sheets(feuilleName).Select
          Range("A1:E1").Select
          ActiveSheet.Paste
-         'Alimentation des champs
+         'Alimentation des champs de chaque feuille créé
          Range("B1").Value = feuilleName
          Range("D3").Value = OwnerTFR
          Range("D4").Value = OwnerTME
