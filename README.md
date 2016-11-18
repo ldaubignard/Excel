@@ -28,3 +28,17 @@ Résultat :
 ```sh
 VCV10L
 ```
+
+### Vérifier si une valeur est numérique
+Exemple de chaîne de caractère dans la cellule D5
+```sh
+VCV10L-AEPGKW 
+```
+Formule Excel :
+```sh
+=SI(ESTNUM(CHERCHE("-";D5));GAUCHE(D5;1)&STXT(D5;CHERCHE("-";D5)+1;1);GAUCHE(D5;1))
+```
+Résultat :
+```sh
+VA
+```
