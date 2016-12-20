@@ -20,6 +20,35 @@ Résultat :
 louis.daubignard@xxxxx.com
 ```
 
+### Récupérer un prénom d'une adresse email 
+Exemple de chaîne de caractère dans la cellule C2
+```sh
+louis.daubignard@xxxxx.com
+```
+Formule Excel :
+```sh
+=NOMPROPRE(GAUCHE(GAUCHE(C2;TROUVE("@";C2)-1);TROUVE(".";GAUCHE(C2;TROUVE("@";C2)-1))-1))
+```
+
+Résultat :
+```sh
+Louis
+```
+
+### Récupérer un nom d'une adresse email 
+Exemple de chaîne de caractère dans la cellule C2
+```sh
+louis.daubignard@xxxxx.com
+```
+Formule Excel :
+```sh
+=MAJUSCULE(STXT(GAUCHE(C2;TROUVE("@";C2)-1);TROUVE(".";GAUCHE(C2;TROUVE("@";C2)-1))+1;(NBCAR(GAUCHE(C2;TROUVE("@";C2)-1))-TROUVE(".";GAUCHE(C2;TROUVE("@";C2)-1)))))
+```
+
+Résultat :
+```sh
+DAUBIGNARD
+```
 
 ### Récupérer un code entre crochet et générer une url avec Id 
 Exemple de chaîne de caractère dans la cellule D5
