@@ -20,6 +20,21 @@ Résultat :
 louis.daubignard@xxxxx.com
 ```
 
+### Récupérer la chaîne de caractère avant le @ d'une adresse email 
+Exemple de chaîne de caractère dans la cellule C2
+```sh
+louis.daubignard@xxxxx.com
+```
+Formule Excel :
+```sh
+=GAUCHE(C2;TROUVE("@";C2)-1)
+```
+
+Résultat :
+```sh
+louis.daubignard
+```
+
 ### Récupérer un prénom d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
 ```sh
