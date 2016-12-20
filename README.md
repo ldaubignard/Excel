@@ -8,8 +8,13 @@ Louis DAUBIGNARD <louis.daubignard@xxxxx.com>
 ```
 Formule Excel :
 ```sh
-=SI(TROUVE("<";A2);STXT(A2;TROUVE("<";A2)+1;TROUVE(">";A2;TROUVE("<";A2))-TROUVE("<";A2)-1);"")
+=SI(ESTERREUR(CHERCHE("<";A2))=FAUX;STXT(A2;TROUVE("<";A2)+1;TROUVE(">";A2;TROUVE("<";A2))-TROUVE("<";A2)-1);"")
 ```
+ou si besoin de récupérer les adresses email sans <> 
+```sh
+=SI(ESTERREUR(CHERCHE("<";A2))=FAUX;STXT(A2;TROUVE("<";A2)+1;TROUVE(">";A2;TROUVE("<";A2))-TROUVE("<";A2)-1);SI(ESTERREUR(CHERCHE("@";A2))=FAUX;A2;""))
+```
+
 Résultat :
 ```sh
 louis.daubignard@xxxxx.com
