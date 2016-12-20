@@ -1,6 +1,21 @@
 # Excel
 Mes fonctions Excel
 
+### Récupérer une adresse email entre <>
+Exemple de chaîne de caractère dans la cellule A2
+```sh
+Louis DAUBIGNARD <louis.daubignard@xxxxx.com>
+```
+Formule Excel :
+```sh
+=SI(TROUVE("<";A2);STXT(A2;TROUVE("<";A2)+1;TROUVE(">";A2;TROUVE("<";A2))-TROUVE("<";A2)-1);"")
+```
+Résultat :
+```sh
+louis.daubignard@xxxxx.com
+```
+
+
 ### Récupérer un code entre crochet et générer une url avec Id 
 Exemple de chaîne de caractère dans la cellule D5
 ```sh
