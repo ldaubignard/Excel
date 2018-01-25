@@ -106,3 +106,17 @@ Résultat :
 ```sh
 VA
 ```
+
+### Formatter une chaîne de carctère en format monétaire
+Exemple de chaîne de caractère dans la cellule D5
+```sh
+ANNEE FISCALE 2017 : 12426
+```
+Formule Excel :
+```sh
+="ANNEE FISCALE 2017" &" : "&TEXTE(SOMME(F11:N11;F13:N13;F15:N15);"# ##0 €")
+```
+Résultat :
+```sh
+ANNEE FISCALE 2017 : 12 426 €
+```
