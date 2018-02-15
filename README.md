@@ -120,3 +120,17 @@ Résultat :
 ```sh
 ANNEE FISCALE 2017 : 12 426 €
 ```
+
+Formule | Description
+:-- | --: 
+=TEXTE(1234,567;"# ##0,00 €")     | Devise avec un séparateur des milliers et 2 décimales : 1 234,57 €. Notez qu’Excel arrondit la valeur à 2 décimales.  
+=TEXTE(AUJOURDHUI();"JJ/MM/AA")   | Date du jour au format JJ/MM/AA (par exemple, 14/03/12) 
+=TEXTE(AUJOURDHUI();"JJJJ")       | Date du jour de la semaine (par exemple, Lundi)
+=TEXTE(MAINTENANT();"HH:MM")      | Heure actuelle (par exemple, 13:29)
+=TEXTE(0,285;"0,0 %")             | Pourcentage (par exemple, 28,5 %)
+=TEXTE(4,34 ;"# ?/?")             | Fraction (par exemple, 4 1/3)
+=SUPPRESPACE(TEXTE(0,34;"# ?/?")) | Fraction (par exemple, 1/3) Notez que cette formule utilise la fonction SUPPRESPACE pour supprimer l’espace de début dans le cas d’une valeur décimale.
+=TEXTE(12200000;"0,00E+00")       | Notation scientifique (par exemple, 1,22E+07)  
+=TEXTE(1234567898;"[<=9999999]###-####;(###) ###-####")| Spécial (numéro de téléphone) (par exemple, (123) 456-7898)
+=TEXTE(1234;"0000000")            | Ajouter des zéros (0) de début (par exemple, 0001234)
+=TEXTE(123456;"##0° 00' 00''")    | Personnalisée - Latitude/Longitude
