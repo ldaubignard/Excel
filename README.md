@@ -44,7 +44,7 @@ Formule Excel :
 ```sh
 =STXT(C2;[@depart];[@[longueur texte]])
     [@depart] =TROUVE("@";C2)+1
-    [@[longueur texte]] = =NBCAR(C2)-[@depart]+1
+    [@[longueur texte]] =NBCAR(C2)-[@depart]+1
 ```
 ```sh
 =STXT(C2;TROUVE("@";C2)+1;NBCAR(C2)-(TROUVE("@";C2)+1)+1)
