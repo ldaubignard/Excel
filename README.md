@@ -35,6 +35,26 @@ Résultat :
 louis.daubignard
 ```
 
+### Récupérer le ndd après le @ d'une adresse email 
+Exemple de chaîne de caractère dans la cellule C2
+```sh
+louis.daubignard@xxxxx.com
+```
+Formule Excel :
+```sh
+=STXT(C2;[@depart];[@[longueur texte]])
+    [@depart] =TROUVE("@";C2)+1
+    [@[longueur texte]] = =NBCAR(C2)-[@depart]+1
+```
+```sh
+=STXT(C2;TROUVE("@";C2)+1;NBCAR(C2)-(TROUVE("@";C2)+1)+1)
+```
+
+Résultat :
+```sh
+xxxxx.com
+```
+
 ### Récupérer un prénom d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
 ```sh
