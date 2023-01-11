@@ -19,6 +19,7 @@ Résultat :
 ```sh
 louis.daubignard@xxxxx.com
 ```
+----
 
 ### Récupérer la chaîne de caractère avant le @ d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
@@ -34,6 +35,7 @@ Résultat :
 ```sh
 louis.daubignard
 ```
+----
 
 ### Récupérer le ndd après le @ d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
@@ -54,6 +56,7 @@ Résultat :
 ```sh
 xxxxx.com
 ```
+----
 
 ### Récupérer un prénom d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
@@ -69,6 +72,7 @@ Résultat :
 ```sh
 Louis
 ```
+----
 
 ### Récupérer un nom d'une adresse email 
 Exemple de chaîne de caractère dans la cellule C2
@@ -84,6 +88,7 @@ Résultat :
 ```sh
 DAUBIGNARD
 ```
+----
 
 ### Récupérer un code entre crochet et générer une url avec Id 
 Exemple de chaîne de caractère dans la cellule D5
@@ -97,7 +102,8 @@ Formule Excel :
 Résultat :
 ```sh
 https://client.zendesk.com/agent/tickets/7591
-```
+`----
+``
 
 ### Récupérer une chaîne de caractère avant un caractère (-)
 Exemple de chaîne de caractère dans la cellule D5
@@ -112,6 +118,7 @@ Résultat :
 ```sh
 VCV10L
 ```
+----
 
 ### Vérifier si une valeur est numérique
 Exemple de chaîne de caractère dans la cellule D5
@@ -126,6 +133,7 @@ Résultat :
 ```sh
 VA
 ```
+----
 
 ### Formatter une chaîne de carctère en format monétaire
 Exemple de chaîne de caractère dans la cellule D5
@@ -140,6 +148,7 @@ Résultat :
 ```sh
 ANNEE FISCALE 2017 : 12 426 €
 ```
+----
 
 Formule | Description
 :-- | --: 
